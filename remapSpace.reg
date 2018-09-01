@@ -3,7 +3,7 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout]
 
 
-; Creating registry item which makes specified keyboard scan codes refer to another ("remapping").
+; Creating registry item which makes specified keyboard scan codes refer to another ("remapping" keys).
 ; 
 ; The numbers below are the last two digits of the key's scan code as shown on AutoHotkey's Key History screen. 
 ; However, all the E0's are different: The E0 is present when AutoHotkey's scan code has the first digit of 1. 
