@@ -1,1 +1,1 @@
-# registry
+useful registry tweaks
