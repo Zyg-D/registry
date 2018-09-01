@@ -1,0 +1,36 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout]
+
+
+; Creating registry item which makes specified scan codes refer to another.
+; 
+; The numbers below are the last two digits of the key's scan code as shown on AutoHotkey's Key History screen. 
+; However, all the E0's are different: The E0 is present when AutoHotkey's scan code has the first digit of 1. 
+; By contrast, 00 is present when the first digit in ahk is 0.
+; 
+; To return to your original layout, you can delete the "Scancode Map" item in the above registry location (then reboot).
+
+; Creating this item:
+"Scancode Map"=hex:00,00,00,00,00,00,00,00,\
+
+; ---------------------------------------------------------------------------
+; BE SURE TO UPDATE THE COUNT BELOW TO REFLECT THE TOTAL NUMBER OF REMAPS + 1 (and write it as hexadecimal, not decimal)
+; (1 extra for the null terminator):
+; ---------------------------------------------------------------------------
+
+03,00,00,00,\
+
+; 01. Delete (53,E0) sent in place of Insert (52,E0) [ahk equivalent - SC152::SC153]:
+;53,E0,52,E0,\
+; 02. Home (47,E0) sent in place of Delete (53,E0) [ahk equivalent - SC153::SC147]:
+;47,E0,53,E0,\
+; 03. Insert (52,E0) sent in place of Home (47,E0) [ahk equivalent - SC147::SC152]:
+;52,E0,47,E0,\
+
+; 01. Space sent in place of RAlt [ahk equivalent - SC138::SC039]:
+39,00,38,E0,\
+; 02. RAlt sent in place of Space [ahk equivalent - SC039::SC138]:
+38,E0,39,00,\
+; 03. Null Terminator -- be sure to change the count at the top to reflect this number.
+00,00,00,00
