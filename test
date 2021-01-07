@@ -102,3 +102,16 @@ xkb_keymap {
 };
 
 
+xev
+KeyPress event, serial 34, synthetic NO, window 0x3400001,
+    root 0x6cb, subw 0x0, time 1249191, (168,-8), root:(797,298),
+    state 0x0, keycode 108 (keysym 0x20, space), same_screen YES,
+    XLookupString gives 1 bytes: (20) " "
+    XmbLookupString gives 1 bytes: (20) " "
+    XFilterEvent returns: False
+
+KeyRelease event, serial 37, synthetic NO, window 0x3400001,
+    root 0x6cb, subw 0x0, time 1249261, (168,-8), root:(797,298),
+    state 0x8, keycode 108 (keysym 0x20, space), same_screen YES,
+    XLookupString gives 1 bytes: (20) " "
+    XFilterEvent returns: False
